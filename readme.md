@@ -50,3 +50,7 @@ protected $fillable = [
    'name', 'email', 'password', 'google_id'
 ];
 ```
+7. Create route
+```
+adada
+```
