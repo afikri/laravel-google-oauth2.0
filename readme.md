@@ -50,7 +50,8 @@ protected $fillable = [
    'name', 'email', 'password', 'google_id'
 ];
 ```
-7. Create route
+7. Create routes in the routes/web.php
 ```
-adada
+Route::get('redirect/{driver}', 'Auth\LoginController@redirectToProvider')->name('login.provider');
+Route::get('{driver}/callback', 'Auth\LoginController@handleProviderCallback')->name('login.callback');
 ```
