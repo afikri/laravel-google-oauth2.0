@@ -33,6 +33,16 @@
  ```
 where the values are placed in the .env file <br>
 5. Update user table by **adding google id** by issuing the command
-```
+`
 php artisan make:migration add_google_id_column
+`
+<br>then add lines of code below
 ```
+Schema::table('users', function ($table) {
+   $table->string('google_id')->nullable();
+});<br>
+6. Update User Model
+```
+protected $fillable = [
+   'name', 'email', 'password', 'google_id'
+];
