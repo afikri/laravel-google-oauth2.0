@@ -31,3 +31,4 @@
         'redirect'      => env('GOOGLE_REDIRECT'),
     ],
  ```
+where the values are placed in the .env file 
