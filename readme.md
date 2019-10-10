@@ -44,3 +44,7 @@ Schema::table('users', function ($table) {
 ```
 <br>
 
+6. Update user model
+```
+ddsadads
+```
