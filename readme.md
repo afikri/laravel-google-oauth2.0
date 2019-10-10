@@ -40,9 +40,12 @@ php artisan make:migration add_google_id_column
 ```
 Schema::table('users', function ($table) {
    $table->string('google_id')->nullable();
-});<br>
+});
+```
+<br>
 6. Update User Model
 ```
 protected $fillable = [
    'name', 'email', 'password', 'google_id'
 ];
+```
