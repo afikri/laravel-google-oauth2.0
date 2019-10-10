@@ -46,5 +46,7 @@ Schema::table('users', function ($table) {
 
 6. Update user model
 ```
-ddsadads
+protected $fillable = [
+
+];
 ```
