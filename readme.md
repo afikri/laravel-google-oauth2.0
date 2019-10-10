@@ -46,7 +46,7 @@ Schema::table('users', function ($table) {
 6. Update User Model
 <br>
 ```
-public function main(){
+function main(){
     yadda;
 }
 ```
