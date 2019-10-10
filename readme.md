@@ -32,3 +32,4 @@
     ],
  ```
 where the values are placed in the .env file 
+5. Update user table by **adding google id** 
