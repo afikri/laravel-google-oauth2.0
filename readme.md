@@ -55,3 +55,12 @@ protected $fillable = [
 Route::get('redirect/{driver}', 'Auth\LoginController@redirectToProvider')->name('login.provider');
 Route::get('{driver}/callback', 'Auth\LoginController@handleProviderCallback')->name('login.callback');
 ```
+8. On LoginController add
+```
+public function redirectToProvider()
+{
+   return Socialite::driver('google')->redirect();
+}
+```
+
+
