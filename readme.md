@@ -22,3 +22,12 @@
 ```
 3. Create google app 
 [Follow this link](https://console.developers.google.com)
+
+4. Setup client id, client secret and callback url in the cofig/services.php
+```
+'google' => [
+        'client_id'     => env('GOOGLE_CLIENT_ID'),
+        'client_secret' => env('GOOGLE_CLIENT_SECRET'),
+        'redirect'      => env('GOOGLE_REDIRECT'),
+    ],
+ ```
