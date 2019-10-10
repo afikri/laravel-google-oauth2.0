@@ -47,6 +47,6 @@ Schema::table('users', function ($table) {
 6. Update user model
 ```
 protected $fillable = [
-
+   'name', 'email', 'password', 'google_id'
 ];
 ```
