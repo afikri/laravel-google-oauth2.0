@@ -31,5 +31,5 @@
         'redirect'      => env('GOOGLE_REDIRECT'),
     ],
  ```
-where the values are placed in the .env file 
+where the values are placed in the .env file <br>
 5. Update user table by **adding google id** 
