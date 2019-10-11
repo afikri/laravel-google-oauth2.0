@@ -86,3 +86,8 @@ public function handleProviderCallback()
   }
 }
 ```
+9. Somewhere on blade, put the code
+```
+<a href="{{ route('login.provider', 'google') }}" class="btn btn-secondary">{{ __('Google Sign in') }}</a>
+```
+10. Done!
