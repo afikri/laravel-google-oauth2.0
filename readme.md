@@ -38,8 +38,11 @@ php artisan make:migration add_google_id_column
 `
 <br>then add lines of code below
 ```
-Schema::table('users', function ($table) {
-   $table->string('google_id')->nullable();
+Schema::table('users', function ($table) {   
+   $table->string('socialite_id')->nullable()->after('id');
+   $table->string('socialite_name')->nullable()->after('socialite_id');
+   $table->string('avatar')->nullable()->after('socialite_name');
+   $table->string('password')->nullable()->change();
 });
 ```
 <br>
